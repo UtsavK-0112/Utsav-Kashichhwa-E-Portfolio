@@ -1,0 +1,112 @@
+body {
+    background-color: #23252e;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    margin: 50px 10%;
+    min-width: 700px;
+    
+}
+
+h1, h2, h3, p {
+    color: white;
+}
+
+main h2 {
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 44px;
+}
+
+main h3 {
+    font-weight: 600;
+    color: white;
+    font-size: 28px;
+    margin: 18px 0;
+}
+
+main h4 {
+    font-weight: 500;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.my-image {
+    margin: 20px 30%;
+    width: 40%;
+    border: 3px solid white;
+    padding: 3px;
+}
+
+main ul {
+    margin: 15px 30px;
+    color: white;
+}
+
+iframe {
+    margin-bottom: 20px;
+}
+
+/* For about page */
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: rgb(20, 20, 23);
+    border-radius: 10px 10px 0 0;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    color: white;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgba(108, 108, 108, 0.376)
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #1d1d22;
+  }
+  
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    background-color: #141417;
+}
+
+.tabcontent p {
+    text-align: center;
+    font-weight: 100;
+    font-size: 16px;
+    font-style: italic;
+  }
+
+
+.hobbies img {
+    width: 15%;
+    vertical-align: middle;
+    margin-bottom: 20px;
+}
+
+a {
+    color: aquamarine;
+}
+

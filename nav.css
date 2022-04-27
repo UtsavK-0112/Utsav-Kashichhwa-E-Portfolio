@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Header */
+header img {
+    width: 200px;
+    margin-right: auto;
+}
+
+header li, header a, header button {
+    font-weight: 500;
+    font-size: 16;
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 8%;
+    background-color: #1010146c;
+}
+
+header ul {
+    list-style: none;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+header li a {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+    transition: all 0.5s ease-out;
+    padding: 10px 0;
+}
+  
+header li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #459f8b;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+header li a:hover {
+    color: #65b1a1;
+}
+
+header li a:hover:after, .selected:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.selected {
+    color: #65b1a1;
+}
+
+header button {
+    padding: 10px 15px;
+    background-color: #347dc2;
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+header button:hover {
+    background-color: #347dc2a6;
+}
+
+/* sub-menu */
+/* Dropdown content (hidden by default) */
+header nav ul li div.submenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: all 0.3s ease 1s;
+}
+  
+/* Links inside the dropdown */
+header nav ul li div.submenu a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+/* Add a grey background color to dropdown links on hover */
+header nav ul li div.submenu a:hover {
+    background-color: rgb(174, 174, 174);
+}
+  
+/* Show the dropdown menu on hover */
+header nav ul li:hover div.submenu {
+    display: block;
+}
+  
+

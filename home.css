@@ -1,0 +1,90 @@
+body {
+    background-image: url(images/background.png);
+    min-height: 100vh;
+}
+
+main {
+    margin: 100px 15%;
+    min-width: 700px;
+}
+
+h1, h2, h3, p {
+    color: white;
+}
+
+.introduction {
+    width: 50%;
+    float: left;
+    
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 42px;
+    filter: drop-shadow(7px 7px 15px #000000b2);
+}
+
+
+div.home-img {
+    float: right;
+    width: 35%;
+    min-width: 250px;
+    filter: drop-shadow(10px 10px 20px #000000a4)
+}
+
+div.home-img img {
+    width: 85%;
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.buttons button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    width: 350px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    filter: drop-shadow(10px 10px 20px #0000008c)
+}
+
+.sourcecodebutton {
+    background-color: rgb(26, 32, 49);
+}
+
+.foliobutton {
+    background-color: rgb(24, 58, 150);
+}
+
+.pdfbutton {
+    background-color: rgb(146, 54, 54);
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: scale(10px, 10px)
+}
+
+.buttons img {
+    width: 30px;
+}
+
+.buttons button p {
+    display: inline;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    padding: 20px;
+    font-weight: 200;
+    transition: all 0.3s ease 0s;
+}
+
+.buttons button:hover p {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.493);
+}
+

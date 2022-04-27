@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/favicon" href="images/favicon.png">
+    <script src="https://kit.fontawesome.com/474726052b.js" crossorigin="anonymous"></script>
+    <title>Utsav's E-Porfolio</title>
+</head>
+<body class="contact-page">
+    <div class="bg-img">
+        <header>
+            <img src="images/logo-white.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="selected">About Me</a></li>
+                    <li><a>Assesments</a>
+                        <div class="submenu">
+                            <a href="task-1.html">Task 1</a>
+                            <a href="task-2.html">Task 2</a>
+                        </div>
+                    </li>
+                </ul>  
+            </nav>
+            <button onclick="window.location.href='contact.html'">Contact</button>
+        </header>
+        <main>
+            <h2>About Me</h2>
+            <img src="images/my-image.png" class="my-image">
+            <p>Hi, I'm Utsav Kashichhwa and I'm 13 years old as of writing this. I am living in Sydney, Australia and was born in Nepal. I am in Year 9, studying at Hurlstone Agriculture High School.</p>
+            <h3>What subjects am I studying?</h3>
+            <p>Alongside the usual year 9 subjects, I am doing IST (Information Systems and Technologies) and Commerce for my electives. Here's a list of the subjects I'm studying this year ranked by how enjoyable and intresting I find them:</p>
+            <ul>
+                <li>Maths</li>
+                <li>IST</li>
+                <li>Science</li>
+                <li>History</li>
+                <li>Commerce</li>
+                <li>Geography</li>
+                <li>English</li>
+                <li>PDHPE</li>
+                <li>Agriculture</li>
+            
+            </ul>
+            <h3>My hobbies and interests</h3>
+            <div class="hobbies">
+                <img src="images/python-logo.png">
+                <img src="images/cs-logo.png">
+                <img src="images/pygame-logo.gif">
+                <img src="images/minecraft-logo.png">
+                <img src="images/gta-logo.png">
+            </div>
+            
+            <p>My hobbies are coding and gaming. My favourite games of all time are Minecraft and the Grand Theft Auto Series.</p>
+            <p>I started learning to code around half a year ago during lockdown. I have mostly been doing work with Python, a high-level general-purpose language. Python was the first language that I learnt, and instatly fell in love with due to its focus on readability and ease-of-use. </p>
+           
+            <p>I have used Python to create terminal games and applications such as:</p>
+            <ul>
+                <li>Snake</li>
+                <li>A bubble sort visualiser,</li>
+                <li>A basic login system</li>
+            </ul>
+            <p>I have also learnt the basics of a python graphics libray called "Pygame". My pygame projects include: </p>
+            <ul>
+                <li>Snake (with the help of a tutorial)</li>
+                <li>An NFT Generator (Friend made the drawings)</li>
+                <li>A basic drawing program that stores contents in a database</li>
+            </ul>
+            <p>Currenly I'm learning C# and the Unity game engine.</p>
+            <br>
+            <h4>Here are some of my Python and C# projects hosted on <a href="https://replit.com/@UtsavKashichhwa">replit.com</a>:</h4>
+            <div class="code">
+                <div class="tab">
+                    <button class="tablinks" onclick="openRepl(event, 'Games')">Python Game Library</button>
+                    <button class="tablinks" onclick="openRepl(event, 'Snake')">C# Snake in console</button>
+                    <button class="tablinks" onclick="openRepl(event, 'Sort')">Bubble sort visualiser</button>
+                </div>
+                <div id="Games" class="tabcontent" style="display: block;">
+                    <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@UtsavKashichhwa/Console-Game-Library?embed=true#main.py"></iframe>
+                    <p>Some console games I made over a weekend</p>
+                </div>
+                <div id="Snake" class="tabcontent">
+                    <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@UtsavKashichhwa/Snake-in-Console?embed=true#main.cs"></iframe>
+                    <p>A basic snake game I made after learning the basics of C#, with the help of my prior experience with Python and the Internet.</p>
+                </div>
+                <div id="Sort" class="tabcontent">
+                    <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@UtsavKashichhwa/Bubble-Sort-Visualiser?embed=true#main.py"></iframe>
+                    <p>Made during the school break between 2021-2022.</p>
+                </div>
+            </div>
+            
+            <script>
+                function openRepl(evt, replName) {
+                    // Declare all variables
+                    var i, tabcontent, tablinks;
+
+                    // Get all elements with class="tabcontent" and hide them
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+
+                    // Get all elements with class="tablinks" and remove the class "active"
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+
+                    // Show the current tab, and add an "active" class to the button that opened the tab
+                    document.getElementById(replName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                    }
+            </script>
+            
+            <h3>Goals and Aspirations for the future</h3>
+            <p>I am hoping to get into the computer programming industry in the future. My dream career would be in game development, however the exploitation and overworking present in that field turns me away to other jobs.</p>
+            <p>My current intrests are in software and mobile app development.</p>
+        </main>
+</body>
+</html>
